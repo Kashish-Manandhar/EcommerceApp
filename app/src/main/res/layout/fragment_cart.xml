@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartFragment">
+   <TextView
+       android:id="@+id/msg_text_cart"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"
+       android:text="Your shipment has been placed. It must be on its way"
+       android:gravity="center"/>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/cart_list"
+       android:layout_above="@id/buy_order"
+       />
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/buy_order"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:background="@drawable/circle_button"
+       android:text="Buy All"
+       android:layout_marginBottom="5dp"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+       android:layout_centerHorizontal="true"
+       android:text="No data"
+       android:id="@+id/error_msg"
+       />
+
+</RelativeLayout>

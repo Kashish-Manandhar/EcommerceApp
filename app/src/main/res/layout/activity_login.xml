@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_margin="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/applogo"
+        android:layout_above="@id/login_number"
+        />
+
+      <EditText
+          android:layout_centerVertical="true"
+          android:layout_centerHorizontal="true"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:id="@+id/login_number"
+          android:hint="Number" />
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:hint="Password"
+           android:id="@+id/login_password"
+           android:layout_below="@id/login_number"
+           android:layout_marginBottom="7dp"
+           android:inputType="textPassword"
+           />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear"
+    android:layout_below="@id/login_password"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm an User"
+        android:layout_weight="1"
+
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tVuser"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm an admin"
+        android:layout_marginRight="10dp"
+        android:id="@+id/tVadmin"
+        android:layout_gravity="right"
+        android:layout_weight="1"
+        android:gravity="right"
+
+
+        />
+
+
+</LinearLayout>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/linear"
+        android:id="@+id/is_loggedin"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Login"
+        android:layout_below="@id/is_loggedin"
+        android:layout_margin="10dp"
+        android:id="@+id/login_btn"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dont Have an account? Sign Up"
+        android:id="@+id/tVsignUp"
+        android:layout_below="@id/login_btn"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

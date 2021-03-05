@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminHome">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/admin_toolbar"/>
+
+    <GridLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_admin"
+        android:layout_below="@id/admin_toolbar"
+        android:columnCount="4">
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/tshirts"
+            android:id="@+id/tshirts"/>
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/female_dresses"
+            android:id="@+id/female_dresses"/>
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/shoess"
+            android:id="@+id/shoes"/>
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/sports"
+            android:id="@+id/sports"
+            />
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/glasses"
+            android:id="@+id/glasses"
+            />
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/purses_bags"
+            android:id="@+id/purses"
+            />
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/laptops"
+            android:id="@+id/laptops"
+            />
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/mobiles"
+            android:id="@+id/mobiles"
+            />
+    </GridLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adminhome_orderbtn"
+        android:layout_below="@id/product_admin"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:text="View Orders"
+        android:background="@drawable/circle_button"/>
+
+
+</RelativeLayout>
